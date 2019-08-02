@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inscripcion_Web</title>
+    <!-- requiered meta tagas always come first -->
+
+    <script>
+        function iniciar() {
+            nombre1=document.getElementById("nombre");
+            nombre2=document.getElementById("apellido");
+            nombre1.addEventListener("input", vaildacion, false);
+            nombre2.addEventListener("input", validacion, false);
+            vaildacion();
+        }
+        function validacion() {
+            if(nombre1.value==''&&nombre2.value==''){
+                nombre1.setCustomValidity('inserte al menos un nombre');
+                nombre1.style.background='#FFDDDD';
+            }else{
+                nombre1.setCustomValidity('');
+                nombre1.style.background='#FFFFFF';
+            }
+
+        }
+        window.addEventListener("load",iniciar, false);
+    </script>
+    <style type="text/css">
+        body{
+            background: url(images/fondo4.png) repeat 0 0;
+        }
+    </style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <! --Boostrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- agregamos css front awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<style>
+    .contenedor{
+        width: 350px;
+        border: solid 3px #a71d2a;
+    }
+    .contenedor2{
+        width: 950px;
+        border: solid 15px #1c7430;
+    }
+    .img-ts{
+        width: 350px;
+        height: 350px;
+    }
+</style>
+<body>
+<div class="container">
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <h1 class="text-primary">Bienvenidos a la Pagina de Cotizacin de Vehiculos" </h1>
+    </section>
+
+
+    <div class="container">
+        <section class="container-fluid slider d-flex justify-content-center align-items-center">
+            <h1 class="text-primary">Aqui  encontraras el  vehiculo que  buscabas  al mejor  precio, de manera rapida, y muy facil. Aprobbecha!!!..." </h1>
+        </section>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+        </div>
+    </section>
+    <h1> </h1>
+    <img src="images/image29.jpg" alt=""class="img-ts rounded float-xs-left">
+    <img src="images/image30.jpg" alt=""class="img-ts rounded float-xs-right">
+    <img src="images/image31.jpg" alt=""class="img-ts rounded float-xs-left">
+    <h1> </h1>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+        </div>
+    </section>
+<h1> </h1>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <h1 class="text-danger"> Escribe tus datos para apartar tu vehiculo </h1>
+    </section>
+
+
+<h6>NOTA: Solo se acepta tarjeta de credito como pago </h6>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+
+        </div>
+    </section>
+    <h1> </h1>
+
+
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+            <section>
+                <form name="registracion" method="get">
+                    Nombres:
+                    <input type="text" name="nombre" id="nombre">
+                    Apellidos:
+                    <input type="text" name="apellido" id="apellido">
+                    No. de Telefono:
+                    <input pattern ="[0-9]{8}" name ="codigopostal" id="codigopostal"
+                           title ="inserte su numero telefonico">
+                    CorreoElectronico:
+                    <input type="email" name="miemail" id="miemail" required>
+                    Rango de Edad:
+                    <input type="range" name="miedad" id="miedad" min="0" max="80" step="20" value="20">
+                    <output id="rango"> 0 a 20   </output>
+
+                    No. de Vehiculo
+                    <input type="number"name="'numero" id="numero" min="1" max="6"
+                           step ="1">
+                    Validar_Pago_con_Tarjeta_de_Credito
+                    <input type="text" id="referencia" name="referencia" required pattern="[4-9]{4}"
+                           title="Solo se aceptan tarjetas de Credito..."/>
+                    <input type="search"name="busqueda" id="busqueda" placeholder="Direccion">
+                    Hora de acceso a la pagina de cotizacion en linea:
+
+                    <input type="time"name="hora" id="hora">
+                    <input type="search"name="busqueda" id="busqueda" placeholder="Envienos sus Comentarios">
+                    <input type="submit" id="send" value="Solicitar">
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <h1> </h1>
+
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+        </div>
+    </section>
+    <H1> </H1>
+    <img src="images/image26.jpg" alt=""class="img-ts rounded float-xs-left">
+    <img src="images/image27.jpg" alt=""class="img-ts rounded float-xs-right">
+    <img src="images/image28.jpg" alt=""class="img-ts rounded float-xs-left">
+    <h1> </h1>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+        </div>
+    </section>
+    <h3 class="text-primary"> Consejos para tener un buen vehiculo</h3>
+        <h6>El buen analisis par adquirir un buen vehiculo parte de sus necesidades, si usted desea adquirir un vehiculo para uso personal, lo mejor sera comprar uno de menor precio; pero si usted es una persona con familia le recomendamos un vehiculo de 4 puertas, del mismo modo los vehiculos estan pensados para aquellas personas que hacen deportes extremos como carreras de vehiculos, en el siguiente apartado le mostramos una pequenia lista de precios disponibles para usted, pero tambien le mostramos sus diversas marcas de fabricantes de los mejores paises del mundo entero...</h6>
+
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor2">
+            <h1> </h1>
+            <h4 class="text-primary">Quieres saber como aprobechar tu dinero para un buen vehiculo?</h4>
+            <h4 class="text-primary">Hazte una idea de la cotizacion de precios con los siguientes:</h4>
+        </div>
+    </section>
+
+
+
+    <h5>PRECIOS EN $:</h5>
+        <h3 class="text-primary"> Trabajo</h3>
+        <h6>1. Pic-op de trabajo de $.2,000.00 a $.2,5000.00</h6>
+        <h6>2. Runner de $.2,300.00 a $.2,000.00</h6>
+        <h3 class="text-primary"> Ciudad</h3>
+        <h6>3. Nissan 4 pueras de $4,500.00 a $5,000.00</h6>
+        <h6>4. Toyota Prado de $4,500.00 a $5,000.00</h6>
+        <h3 class="text-primary"> Deportivos</h3>
+        <h6>5. Volvo 2 Puertas de $.5,000.00 a $.6,000.00</h6>
+        <h6>6. Nissan 2 Puertas de $5,100,00 a $.6,000.00</h6>
+
+
+
+        <h1> </h1>
+    <section class="container-fluid slider d-flex justify-content-center align-items-center">
+        <div class="contenedor">
+            <h1> </h1>
+            <h6 class="display-5">No olvides compartir este blog con los amigos</h6>
+        </div>
+    </section>
+
+
+
+
+</div>
+
+<!-- jquery first, then Boostrap Js. -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
